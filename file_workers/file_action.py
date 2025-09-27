@@ -12,12 +12,10 @@ class FileAction(ABC):
         pass
 
     @abstractmethod
-    def perform_action_on_file(self, path_to_file: str, *args, **kwargs) -> Any | None:
+    def perform_action_on_file(self, path_to_file: str,) -> Any | None:
 
         """
         :param path_to_file: str, (valid) abs path to a local file
-        :param args:
-        :param kwargs:
         :return: Any or None -> up to the concrete implementation of a concrete child class
         """
 
